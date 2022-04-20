@@ -1,0 +1,8 @@
+C:\Zensar\Day2\Assignment\Assignment\bin\Debug\Assignment.exe.config
+C:\Zensar\Day2\Assignment\Assignment\bin\Debug\Assignment.exe
+C:\Zensar\Day2\Assignment\Assignment\bin\Debug\Assignment.pdb
+C:\Zensar\Day2\Assignment\Assignment\obj\Debug\Assignment.csproj.AssemblyReference.cache
+C:\Zensar\Day2\Assignment\Assignment\obj\Debug\Assignment.csproj.SuggestedBindingRedirects.cache
+C:\Zensar\Day2\Assignment\Assignment\obj\Debug\Assignment.csproj.CoreCompileInputs.cache
+C:\Zensar\Day2\Assignment\Assignment\obj\Debug\Assignment.exe
+C:\Zensar\Day2\Assignment\Assignment\obj\Debug\Assignment.pdb
