@@ -6,6 +6,13 @@ using System.Threading.Tasks;
 
 namespace Assignment5
 {
+    class MyOwnException : ApplicationException
+    {
+        public MyOwnException(string s): base(s)
+        {
+           
+        }
+    }
     internal class Program
     {
         public int balance=10000;
@@ -23,7 +30,7 @@ namespace Assignment5
             }
             else
             {
-                throw (new ApplicationException("Insuficient Balance Found !!!"));
+                throw (new MyOwnException("Insufficient Balance Found!!!"));
             }
         }
         public void display()
