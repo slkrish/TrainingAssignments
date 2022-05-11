@@ -1,0 +1,8 @@
+C:\Zensar\CaseStudy\CaseStudy\CaseStudy\obj\Debug\CaseStudy.csproj.AssemblyReference.cache
+C:\Zensar\CaseStudy\CaseStudy\CaseStudy\obj\Debug\CaseStudy.csproj.SuggestedBindingRedirects.cache
+C:\Zensar\CaseStudy\CaseStudy\CaseStudy\obj\Debug\CaseStudy.csproj.CoreCompileInputs.cache
+C:\Zensar\CaseStudy\CaseStudy\CaseStudy\bin\Debug\CaseStudy.exe.config
+C:\Zensar\CaseStudy\CaseStudy\CaseStudy\bin\Debug\CaseStudy.exe
+C:\Zensar\CaseStudy\CaseStudy\CaseStudy\bin\Debug\CaseStudy.pdb
+C:\Zensar\CaseStudy\CaseStudy\CaseStudy\obj\Debug\CaseStudy.exe
+C:\Zensar\CaseStudy\CaseStudy\CaseStudy\obj\Debug\CaseStudy.pdb

@@ -104,8 +104,8 @@ namespace Assignment7
 
             Console.WriteLine("total number of employee whose designation is not “Associate”");
             IEnumerable<Employee> titl = from t in e.employees()
-                                          where t.Title != "Associate"
-                                          select t;
+                                         where t.Title != "Associate"
+                                         select t;
             foreach (var v in titl)
             {
                 Console.WriteLine($"Employye id ={v.EmployeeID}, Name = {v.FirstName} {v.LastName}, Working As {v.Title},Date of birth {v.DOB},date of joining {v.DOJ},and location is{v.City}");
