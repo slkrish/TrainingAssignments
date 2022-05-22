@@ -6,3 +6,10 @@ C:\Zensar\CaseStudy\CaseStudy\CaseStudy\bin\Debug\CaseStudy.exe
 C:\Zensar\CaseStudy\CaseStudy\CaseStudy\bin\Debug\CaseStudy.pdb
 C:\Zensar\CaseStudy\CaseStudy\CaseStudy\obj\Debug\CaseStudy.exe
 C:\Zensar\CaseStudy\CaseStudy\CaseStudy\obj\Debug\CaseStudy.pdb
+C:\Assignments\C#\CaseStudy\CaseStudy\bin\Debug\CaseStudy.exe.config
+C:\Assignments\C#\CaseStudy\CaseStudy\bin\Debug\CaseStudy.exe
+C:\Assignments\C#\CaseStudy\CaseStudy\bin\Debug\CaseStudy.pdb
+C:\Assignments\C#\CaseStudy\CaseStudy\obj\Debug\CaseStudy.csproj.AssemblyReference.cache
+C:\Assignments\C#\CaseStudy\CaseStudy\obj\Debug\CaseStudy.csproj.CoreCompileInputs.cache
+C:\Assignments\C#\CaseStudy\CaseStudy\obj\Debug\CaseStudy.exe
+C:\Assignments\C#\CaseStudy\CaseStudy\obj\Debug\CaseStudy.pdb

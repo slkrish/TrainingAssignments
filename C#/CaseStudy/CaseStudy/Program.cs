@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CaseStudy
 {
-    class Student
+    public class Student
     {
         private int studentId;
         private string studentName;
@@ -42,20 +42,20 @@ namespace CaseStudy
 
         public Course(int Id, string Name, int duration, double fee)
         {
-            this.Id = id;
-            this.Name = name;
+            this.Id = Id;
+            this.Name = Name;
             this.duration = duration;
             this.fees = fee;
         }
 
     }
-    class Info
+    public class Info
     {
       public static void display(Student student)
         {
             Console.WriteLine("Student id is "+student.StudentId+" and student name is "+student.StudentName+" and date of birth is "+student.DateOfBirth);
         }
-        public void display(Course course)
+        public static  void display(Course course)
         {
             Console.WriteLine("student id is "+ course.Id+ "student name is "+ course.Name+" couse duration is" +course.duration + "course fee is " +course.fees);
         }
@@ -66,7 +66,9 @@ namespace CaseStudy
         {
             scenario1();
             scenario2();
-            scenario3();    
+            scenario3();
+            Course course = new Course(1768, "Krishna", 2, 23000.00);
+            Info.display(course);
             Console.ReadLine(); 
         }
        public static void scenario1()
@@ -95,8 +97,6 @@ namespace CaseStudy
                 Info.display(student[i]);
             }
         }
-        Course course = new Course(1768, "Krishna", 2,23000.00);
-        info.display(course);
-
+        
     }
 }
