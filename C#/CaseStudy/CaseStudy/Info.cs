@@ -14,7 +14,7 @@ namespace CaseStudy
             }
             public static void display(Course course)
             {
-                Console.WriteLine("student id is " + course.Id + " Course name is " + course.Name + " couse duration is " + course.duration + " course fee is " + course.fees);
+                Console.WriteLine("Course id is " + course.Id + " Course name is " + course.Name + " couse duration is " + course.duration + " course fee is " + course.fees);
             }
             public static void display(Enroll enroll)
             {

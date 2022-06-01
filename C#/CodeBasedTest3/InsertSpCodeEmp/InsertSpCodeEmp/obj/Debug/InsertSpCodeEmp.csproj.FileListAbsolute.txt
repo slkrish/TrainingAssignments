@@ -1,0 +1,7 @@
+C:\Assignments\C#\CodeBasedTest3\InsertSpCodeEmp\InsertSpCodeEmp\bin\Debug\InsertSpCodeEmp.exe.config
+C:\Assignments\C#\CodeBasedTest3\InsertSpCodeEmp\InsertSpCodeEmp\bin\Debug\InsertSpCodeEmp.exe
+C:\Assignments\C#\CodeBasedTest3\InsertSpCodeEmp\InsertSpCodeEmp\bin\Debug\InsertSpCodeEmp.pdb
+C:\Assignments\C#\CodeBasedTest3\InsertSpCodeEmp\InsertSpCodeEmp\obj\Debug\InsertSpCodeEmp.csproj.AssemblyReference.cache
+C:\Assignments\C#\CodeBasedTest3\InsertSpCodeEmp\InsertSpCodeEmp\obj\Debug\InsertSpCodeEmp.csproj.CoreCompileInputs.cache
+C:\Assignments\C#\CodeBasedTest3\InsertSpCodeEmp\InsertSpCodeEmp\obj\Debug\InsertSpCodeEmp.exe
+C:\Assignments\C#\CodeBasedTest3\InsertSpCodeEmp\InsertSpCodeEmp\obj\Debug\InsertSpCodeEmp.pdb
