@@ -48,6 +48,4 @@ namespace CaseStudy
             this.fees = fee;
         }
     }
-   
-    
 }

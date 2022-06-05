@@ -5,6 +5,7 @@ emptype varchar(1) check(emptype in('C','P')) )
 
 select * from Code_Employee
 
+
 create or alter procedure spinsert(@empname varchar(20),@empsal numeric(10,2),@emptype varchar(1))
 as
 begin
@@ -21,3 +22,4 @@ begin
 		 values(@maxempno,@empname,@empsal,@emptype)
 
  end
+ 

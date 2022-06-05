@@ -18,9 +18,9 @@ namespace CaseStudy
         //public int enrolllistsize;
         //public AppEngine()
         //{
-        //    this.students = new Student[100];
-        //    this.courses = new Course[100];
-        //    this.enrolls = new Enroll[100];
+        //    this.students = new Student[3];
+        //    this.courses = new Course[3];
+        //    this.enrolls = new Enroll[3];
         //    this.studentlistsize = 0;
         //    this.courselistsize = 0;
         //    this.enrolllistsize = 0;
@@ -54,17 +54,19 @@ namespace CaseStudy
         //    return this.enrolls;
         //}
 
-        /* Case Study-3 */
 
-        List<Student> students;
-        List<Course> courses;
-        List<Enroll> enrolls;
-        public AppEngine()
-        {
-            this.students = new List<Student>();
-            this.courses = new List<Course>();
-            this.enrolls = new List<Enroll>();
-        }
+
+        ///* Case Study-3 */
+
+        //List<Student> students;
+        //List<Course> courses;
+        //List<Enroll> enrolls;
+        //public AppEngine()
+        //{
+        //    this.students = new List<Student>();
+        //    this.courses = new List<Course>();
+        //    this.enrolls = new List<Enroll>();
+        //}
         //public void introduce(Course course)
         //{
         //    courses.Add(course);
@@ -73,26 +75,26 @@ namespace CaseStudy
         //{
         //    students.Add(student);
         //}
-        public List<Student> listOfStudents()
-        {
-            // return students;
-            return null;
-        }
-        public List<Course> listOfCourses()
-        {
-            // return courses;
-            return null;
-        }
+        //public List<Student> listOfStudents()
+        //{
+        //    // return students;
+        //   
+        //}
+        //public List<Course> listOfCourses()
+        //{
+        //    // return courses;
+        //    
+        //}
         //public void enroll(Student student, Course course)
         //{
         //    Enroll e = new Enroll(student, course, new DateTime());
         //    this.enrolls.Add(e);
         //}
-        public List<Enroll> listOfEnrollments()
-        {
-            // return enrolls;
-            return null;
-        }
+        //        public List<Enroll> listOfEnrollments()
+        //        {
+        //            // return enrolls;
+        //            
+        //        }
         public void introduce(Course course)
         {
             SqlConnection con = null;
@@ -100,15 +102,7 @@ namespace CaseStudy
             try
             {
                 con = SQLConnection.getcon();
-                    //Console.WriteLine("Enter CourseId:");
-                    //int cid = Convert.ToInt32(Console.ReadLine());
-                    //Console.WriteLine("Enter CourseName");
-                    //string cname = Console.ReadLine();
-                    //Console.WriteLine("Enter Course Duration");
-                    //int cdur = Convert.ToInt32(Console.ReadLine());
-                    //Console.WriteLine("Enter Course fee");
-                    //int fee = Convert.ToInt32(Console.ReadLine());
-                cmd = new SqlCommand("insert into Course values(@cid,@cname,@cdur,@fee)",con);
+                cmd = new SqlCommand("insert into Course values(@cid,@cname,@cdur,@fee)", con);
                 cmd.Parameters.AddWithValue("@cid", course.Id);
                 cmd.Parameters.AddWithValue("@cname", course.Name);
                 cmd.Parameters.AddWithValue("@cdur", course.duration);
@@ -116,30 +110,24 @@ namespace CaseStudy
                 int result = cmd.ExecuteNonQuery();
                 Console.WriteLine("Value Updated");
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.Message);
-                //Console.WriteLine("Values Not Updated");
+
             }
             finally
             {
                 con.Close();
             }
         }
-          public void register(Student student)
-          {
+        public void register(Student student)
+        {
             SqlConnection con = null;
             SqlCommand cmd = null;
             try
             {
                 con = SQLConnection.getcon();
-                //Console.WriteLine("Enter StudentID:");
-                //int sid = Convert.ToInt32(Console.ReadLine());
-                //Console.WriteLine("Enter StudentName");
-                //string sname = Console.ReadLine();
-                //Console.WriteLine("Enter Date of Birth");
-                //string dob = Console.ReadLine();
-                cmd = new SqlCommand("insert into Student values(@sid,@sname,@dob)",con);
+                cmd = new SqlCommand("insert into Student values(@sid,@sname,@dob)", con);
                 cmd.Parameters.AddWithValue("@sid", student.StudentId);
                 cmd.Parameters.AddWithValue("@sname", student.StudentName);
                 cmd.Parameters.AddWithValue("@dob", student.DateOfBirth);
@@ -149,7 +137,7 @@ namespace CaseStudy
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
-               // Console.WriteLine("Values Not Updated");
+
             }
             finally
             {
@@ -164,8 +152,8 @@ namespace CaseStudy
             {
                 string dt = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                 con = SQLConnection.getcon();
-            
-                cmd = new SqlCommand("insert into Enroll values(@sid,@cid,@doe)",con);
+
+                cmd = new SqlCommand("insert into Enroll values(@sid,@cid,@doe)", con);
                 cmd.Parameters.AddWithValue("@sid", student.StudentId);
                 cmd.Parameters.AddWithValue("@cid", course.Id);
                 cmd.Parameters.AddWithValue("@doe", dt);
@@ -175,7 +163,7 @@ namespace CaseStudy
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
-              //  Console.WriteLine("Values Not Updated");
+
             }
             finally
             {
@@ -192,7 +180,7 @@ namespace CaseStudy
             cmd = new SqlCommand("select * from Student where studentId=@sid", con);
             cmd.Parameters.AddWithValue("@sid", sid);
             dr = cmd.ExecuteReader();
-            if(dr!=null)
+            if (dr != null)
             {
                 while (dr.Read())
                 {
@@ -204,7 +192,7 @@ namespace CaseStudy
         }
         public Course GetCourseById(int cid)
         {
-            Course course=null;
+            Course course = null;
             SqlConnection con = null;
             SqlCommand cmd = null;
             SqlDataReader dr;
@@ -216,12 +204,12 @@ namespace CaseStudy
             {
                 while (dr.Read())
                 {
-                    course = new Course((int)dr["Id"], (string)dr["Name"], (int)dr["duration"],Convert.ToDouble(dr["fees"]));
+                    course = new Course((int)dr["Id"], (string)dr["Name"], (int)dr["duration"], Convert.ToDouble(dr["fees"]));
                 }
             }
             con.Close();
             return course;
         }
-           
+
     }
 }
