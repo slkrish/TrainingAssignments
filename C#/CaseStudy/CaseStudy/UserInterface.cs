@@ -253,18 +253,18 @@ namespace CaseStudy
             {
                 con = SQLConnection.getcon();
                 Console.WriteLine("Enter course id to update course");
-                int sid = Convert.ToInt32(Console.ReadLine());
+                int cid = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Enter course name:");
                 string cname = Console.ReadLine();
                 Console.WriteLine("Enter duration");
                 int dur = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine("Enter fees");
                 double fees = Convert.ToDouble(Console.ReadLine());
-                cmd = new SqlCommand("update Course set Name =@name where Id=@sid", con);
+                cmd = new SqlCommand("update Course set Name =@name where Id=@cid", con);
                 cmd.Parameters.AddWithValue("@name", cname);
                 cmd.Parameters.AddWithValue("@dur", dur);
                 cmd.Parameters.AddWithValue("@fee", fees);
-                cmd.Parameters.AddWithValue("@sid", sid);
+                cmd.Parameters.AddWithValue("@cid", cid);
                 int res = cmd.ExecuteNonQuery();
                 if (res > 0)
                 {
